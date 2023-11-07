@@ -1,0 +1,47 @@
+APÓS SLIDES:
+
+    criar aplicação CDN;
+
+VOLTA P/ SLIDES:
+
+    criar aplicação CLI, e fazer as seguintes etapas:
+        1 - Analise da estrutura do código.
+        2 - Excluir os arquivos do src/components
+        3 - Excluir os arquivos {
+
+                src/assets/base.css,
+                src/assets/main.css,
+                src/assets/logo.svg
+                src/components/icons
+                src/components/TODOS ARQUIVOS
+            }
+        4 - Criar a rota Carrinho e Home
+        5 - Configurar o router/index.js
+        6 - Instalar o Axios e o SCSS 
+        7 - Estilizar e colocar as tags HTML nos Arquivos {
+
+                App.vue,
+                HomeView.vue
+                CarrinhoView.vue
+
+            }
+        8 - Configurar o state stores/loja.js
+        9 - no link https://fakestoreapi.com/products pegar uns 3 itens para mocar no state
+        10 - usar o stores/loja.js para mostrar os produtos
+        11 - Fazer a requisição com axios no stores/loja.js
+        12 - chamar a função carregarProdutos() no HomeView.vue
+        13 - Criar o v-for no HomeView.vue com os produtos vindo da API
+        14 - Criar a função AddAoCarrinho() dentro do HomeView.vue
+        15 - Colocar a função no @click do botão
+        16 - Adicionar a propriedade quantity = 1;
+        17 - Criar a ação de AddAoCarrinho() dentro do stores/loja.js 
+        18 - Criar o state produtosNoCarrinho []
+        19 - Criar uma const produtosNoCarrinho = loja.produtosNoCarrinho; para testar {{ produtosNoCarrinho.length }}
+        20 - Criar a função de adicionar só um item de cada no carrinho
+        21 - Criar a função de Remover do Carrinho
+        22 - usar o stores/loja.js para mostrar os produtosNoCarrinho na view CarrinhoView
+        23 - Criar a função const loja = useLojaStore();
+        24 - Usar o loja.produtosNoCarrinho no v-for, para mostrar prod do carrinho.
+        25 - Mapear as propiedades do objeto nas div {{ produto... }}
+        26 - Mapear as propiedades do objeto nas div {{ produto... }}
+        23 - Criar const const produtosNoCarrinho para calcular o total;

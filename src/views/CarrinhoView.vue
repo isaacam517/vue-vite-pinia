@@ -1,11 +1,11 @@
 <script setup>
 import { useLojaStore } from '@/stores/loja';
 
-const loja = useLojaStore();
+const loja = useLojaStore(); // passando o state para uma v-for
 const produtosNoCarrinho = loja.produtosNoCarrinho; //função para calcular o total
 
-const removerDoCarrinho = (produtoId) => {
-  console.log(produtoId)
+const removerDoCarrinho = (produtoId) => { // remover produto do carrinho
+  //console.log(produtoId)
   loja.removerDoCarrinho(produtoId);
 };
  

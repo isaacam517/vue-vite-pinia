@@ -9,20 +9,19 @@ loja.carregarProdutos();
 </script>
 
 <template>
-    <header>
-        <nav>
-          <RouterLink to="/">Loja</RouterLink> |
-          <RouterLink to="/carrinho">Carrinho ( {{ loja.produtosNoCarrinho.length }} )</RouterLink>
-        </nav>
-    </header>
+  <header>
+      <nav>
+        <RouterLink to="/">Loja</RouterLink> |
+        <RouterLink to="/carrinho">Carrinho ( {{ loja.produtosNoCarrinho.length }} )</RouterLink>
+      </nav>
+  </header>
 
-    <div v-if="loja.produtos.length > 0">
+  <div v-if="loja.produtos.length > 0">
       <RouterView />
   </div>
   <div v-else>
     <p>Carregando produtos...</p>
   </div>
-    s
 
 </template>
 

@@ -39,9 +39,14 @@ VOLTA P/ SLIDES:
         19 - Criar uma const produtosNoCarrinho = loja.produtosNoCarrinho; para testar {{ produtosNoCarrinho.length }}
         20 - Criar a função de adicionar só um item de cada no carrinho
         21 - Criar a função de Remover do Carrinho
+
         22 - usar o stores/loja.js para mostrar os produtosNoCarrinho na view CarrinhoView
         23 - Criar a função const loja = useLojaStore();
         24 - Usar o loja.produtosNoCarrinho no v-for, para mostrar prod do carrinho.
         25 - Mapear as propiedades do objeto nas div {{ produto... }}
-        26 - Mapear as propiedades do objeto nas div {{ produto... }}
-        23 - Criar const const produtosNoCarrinho para calcular o total;
+        26 - Criar a const totalDaCompra para calcular o preço total do pedido
+        com  return produtosNoCarrinho.reduce((total, produto) => total + (produto.price * produto.quantity), 0).toFixed(2);
+        26 - Chamar a função totalDaCompra() na div total-pedido
+        27 - Criar const removerDoCarrinho passar o id para loja.removerDoCarrinho(produtoId);
+        
+        99 - EXTRA SALVAR ITENS NO LOCALSTORAGE

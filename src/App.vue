@@ -5,6 +5,7 @@ import { useLojaStore } from '@/stores/loja'
 const loja = useLojaStore();
 
 loja.carregarProdutos();
+//loja.carregarProdutosLocalStorage();
 
 </script>
 
